@@ -1,0 +1,10 @@
+1. Introduction to AI/ML
+2. Introduction to Python for ML
+3. Hands-on python - Sample Programs
+4. Introdution to DataScience
+5. Python libraries for datascience - Numpy,Pandas,Matlablip
+6. Machine Learning algorithms
+7. Hands on - 
+Linear Regression,
+Logistic Regression,
+K-Means clustering
