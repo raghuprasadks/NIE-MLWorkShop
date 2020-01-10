@@ -36,7 +36,7 @@ Common = {'Tim': 19,'Charlie':12,'Tiffany':22,'Robert':25}
 
 Boys = {'Tim': 18,'Charlie':12,'Rakesh':25}
 
-Girls = {'Tiffany':22}
+Girls = {'Tiffany':22,'Sanjana':18}
 
 for key in Boys.keys():
 

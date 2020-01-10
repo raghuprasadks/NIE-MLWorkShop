@@ -4,10 +4,11 @@ Created on Tue Aug 28 16:05:36 2018
 
 @author: Raghu Prasad
 https://www.listendata.com/2017/12/python-pandas-tutorial.html
+https://www.w3resource.com/python-exercises/pandas/index.php
 """
 
 #Importing pandas library
-import pandas as pd;
+import pandas as pd
 #Importing Dataset
 
 # pandas series
@@ -49,6 +50,7 @@ print(income.columns[0:2])
 #Knowing the Variable types
 print(income.dtypes)
 print(income['State'].dtypes)
+print(income.State)
 #Changing the data types
 income.Y2008 = income.Y2008.astype(float)
 print(income['Y2008'].dtypes)
@@ -90,6 +92,9 @@ income.sample(frac = 0.1)
 
 #Selecting only a few of the columns
 income.loc[:,["Index","State","Y2008"]]
+
+income.loc[16:,["Index","State","Y2008"]]
+
 
 income.loc[:,"Index":"Y2008"]  #Selecting consecutive columns
 #In the above command both Index and Y2008 are included.
@@ -147,7 +152,7 @@ income.drop([0,1,2,3],axis = 0)
 
 #To sort the data sort_values( ) function is deployed. By default inplace = False and ascending = True.
 
-income.sort_values("State",ascending = False)
+i1 = income.sort_values("State",ascending = True)
 income.sort_values("State",ascending = False,inplace = True)
 income.Y2006.sort_values() 
 
