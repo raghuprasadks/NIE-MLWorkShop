@@ -4,6 +4,14 @@ class myClass():
         print("myClass:method1")
     def method2(self, name):
         print("myClass:method2:Name " , name)
+
+
+mc = myClass()
+mc.method1()
+mc.method2("raghu")
+
+print(__name__)
+
 def main():
     # exercise the class methods
     c = myClass()
@@ -134,3 +142,55 @@ kar = Karnataka('Karnataka Bank','Nehru Road,Mangaluru',1003)
 roi = kar.rateOfInterest()
 interest =kar.calculateInterest(100000,roi,1)
 print('interest from karnataka bank is ',interest)
+
+
+class vehicle():
+    def __init__(self,make,model,yom,vtype,price,speed,stype):
+        self.make = make
+        self.model = model
+        self.yom = yom
+        self.vtype = vtype
+        self.price = price
+        self.speed = speed
+        self.stype = stype
+        
+    def start(self):
+        self.speed = 0
+        self.sype = "Kick Start"
+        
+    def accelerate(self):
+        self.speed = 0
+    
+    def stop(self):
+        self.speed = 0
+    
+    def info(self):
+        return " Make : ",self.make ," Model ",self.model
+    
+class bike(vehicle):
+    def start(self):
+        self.speed = 0
+        self.sype = "Button Start"
+    def accelerate(self):
+        self.speed = self.speed + 5
+        
+        
+class car(vehicle):
+    def __init__(self,make,model,yom,vtype,price,speed,stype,ac):
+        vehicle.__init__(self,make,model,yom,vtype,price,speed,stype)
+        self.ac = ac
+           
+    def start(self):
+        self.speed = 0
+        self.sype = "Button Start"
+    def accelerate(self):
+        self.speed = self.speed + 10
+    def info(self):
+        self.commoninfo = vehicle.info(self)
+        return self.commoninfo + ' AC :',self.ac
+
+himalayan = bike('Royal Enfield ','Himalayan',2020,'petrol',200000,160,'Kick start')
+himalayan.start()
+himalayan.accelerate()
+himalayan.stop()
+himalayan.info()
