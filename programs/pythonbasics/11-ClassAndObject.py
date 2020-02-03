@@ -194,3 +194,32 @@ himalayan.start()
 himalayan.accelerate()
 himalayan.stop()
 himalayan.info()
+
+
+class ipl():
+    def __init__(self,name,team,runs,wickets):
+        self.name = name
+        self.team = team
+        self.runs = runs
+        self.wickets = wickets
+    def info (self):
+        return 'IPL Players : Name ',self.name, ' Team : ',self.team
+iplplayers = []
+vk = ipl('Virat','RCB',890,0)
+iplplayers.append(vk)
+kl = ipl('K Rahul','XXIP',590,0)
+iplplayers.append(kl)
+bumrah = ipl('Bumrah','MI',59,19)
+iplplayers.append(bumrah)
+jadeja = ipl('Jadeja','CSK',465,12)
+iplplayers.append(jadeja)
+max = 0
+maxrungetter = ''
+for i in iplplayers:
+    print ('Name ', i.name,' runs : ',i.runs,' wickets ',i.wickets)
+    if (i.runs > max):
+        max = i.runs
+        maxrungetter = i.name        
+print('maximum runs ',max)
+print('maximum run getter  ',maxrungetter)
+

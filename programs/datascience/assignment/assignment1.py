@@ -1,7 +1,6 @@
 import pandas as pd
 df = pd.read_csv('studentrecord.csv')
 print(df)
-
 '''
 1. Create a column called total
 '''
