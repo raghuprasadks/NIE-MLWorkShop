@@ -1,0 +1,13 @@
+Projects
+1. Prediction of sales of walmart
+a. Anil Kumar
+b. Ajay
+c. Diksha
+d. Mir
+
+2. Prediction of quality of wine
+a. Sarhan
+b. Sushma
+c. Yashaswini
+
+
